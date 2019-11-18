@@ -57,18 +57,68 @@
  	{
 	 	cout<<w;
 		l=rez(t,w,w,15);
-	 	for(i;i<r.length();i++)
+		if(w==6)
+		{
+			for(i;i<r.length();i++)
+	 		{
+	 		
+	 			if(r[i]==l[0])
+	 			{
+	 				k=i;
+	 				break;
+				}
+	 				
+			}
+			s=(k-5);
+		 	d=r[s];
+			wcout<<d<<endl;	
+		}
+		if(w==8)
+		{
+			for(i;i<r.length();i++)
+	 		{
+	 		
+	 			if(r[i]==l[0])
+	 			{
+	 				k=i;
+	 				break;
+				}
+	 				
+			}
+		 	d=r[k];
+		 	wcout<<d<<endl;	
+		}
+		if(w==11)
+		{
+			for(i;i<r.length();i++)
+	 		{
+	 		
+	 			if(r[i]==l[0])
+	 			{
+	 				k=i;
+	 				break;
+				}
+	 				
+			}
+			s=k+2;
+			 d=r[s];
+		 	wcout<<d<<endl;	
+		}
+		else{
+			if(w!=6 and w!=8 and w!=11)
+			{
+					for(i;i<r.length();i++)
 	 	{
 	 		
 	 		if(r[i]==l[0])
 	 		{
 	 			k=i;
-	 		//	cout<<"NOMER "<<k<<endl;
 	 			break;
 			 }
 	 			
 		}
-	 	s=(k-14);
+		
+	 		s=(k-14);
 	 //	cout<<"Rizny "<<s<<" "<<s%32<<endl;
 	 	if(s<0)
 	 	{
@@ -76,6 +126,10 @@
 		}
 	 	d=r[s%32];
 	 	wcout<<d<<endl;
+		}
+	 		
+			}
+		
 	 	s=0;i=0;
 	 }
  	
